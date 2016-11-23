@@ -51,14 +51,14 @@ Review the Feed Reader Testing [Project Rubric](https://review.udacity.com/#!/pr
 
 The index.html file needs to be loaded in a browser.  I performed the folowing steps for the competion steps above
 
-6. In the js/app.js file, the variable allFeeds ( line 10) can be renamed.  This will cause the are defined test to fail.  You can also comment out lines 12 to 22 so that the variable is empty.  This will cause the test to fail also.
-7. Undo the steps in #6 to get a passing test.
-8. Added tests on line 38 in jasmine/spec/feedreader.js to check the url.  You can rename the url property in the allFeeds variable and or blank out the url assignment to test the failure.
-9. Added tests on line 56 in jasmine/spec/feedreader.js to check the name.  You can rename the name property in the allFeeds variable and or blank out the name assignment to test the failure.
-10. Added a describe statement on line 68 in jasmine/spec/feedreader.js for the new suite.
-11. Added an it statement on line 82 in jasmine/spec/feedreader.js to check to see if the menu is hidden.  To test you can remove the 'class="menu-hidden"' from the index.html to test the failure.
-12. Added an it statement on line 98 in jasmine/spec/feedreader.js to check to see if the menu unhides after you click the icon.  The way i tested it was to comment out the click statement to see if it fails.  Also added an it statement on line 107 in jasmine/spec/feedreader.js to check to see if the menu is hidden after you click the icon again after it is unhidden.  The way i tested it was to comment out the click statement to see if it fails. 
-13. Added a describe statement on line 114 in jasmine/spec/feedreader.js for the new suite.
-14. Added an beforeEach statement on line 127 in jasmine/spec/feedreader.js so that we can load the first feed ( using the done callback).  Then on added the it statement on line 137 to check for the entries.  To test i commented out line 69 in the app.js file so that the entries didn't get populated on the web page.
-15. Added a describe statement on line 147 in jasmine/spec/feedreader.js for the new suite.
-16. Added an beforeEach statement on line 163 in jasmine/spec/feedreader.js so that we get get the first feeds content and then run the second feed to get it's content.  Then on added the it statement on line 174 to check for valid content and make sure the 2 contents do not match. I tested this by changing the second feed to pull the first feed again by changing the 1 to a 0 in line 166.
+1. In Step 6 In the js/app.js file, the variable allFeeds ( line 10) can be renamed.  This will cause the are defined test to fail.  You can also comment out lines 12 to 22 so that the variable is empty.  This will cause the test to fail also.
+2. In Step 7 Undo the steps in #6 to get a passing test.
+3. In Step 8 Added tests on line 38 in jasmine/spec/feedreader.js to check the url.  You can rename the url property in the allFeeds variable and or blank out the url assignment to test the failure.
+4. In Step 9 Added tests on line 56 in jasmine/spec/feedreader.js to check the name.  You can rename the name property in the allFeeds variable and or blank out the name assignment to test the failure.
+5. In Step 10 Added a describe statement on line 68 in jasmine/spec/feedreader.js for the new suite.
+6. In Step 11 Added an it statement on line 82 in jasmine/spec/feedreader.js to check to see if the menu is hidden.  To test you can remove the 'class="menu-hidden"' from the index.html to test the failure.
+7. In Step 12 Added an it statement on line 98 in jasmine/spec/feedreader.js to check to see if the menu unhides after you click the icon.  The way i tested it was to comment out the click statement to see if it fails.  Also added an it statement on line 107 in jasmine/spec/feedreader.js to check to see if the menu is hidden after you click the icon again after it is unhidden.  The way i tested it was to comment out the click statement to see if it fails. 
+8. In Step 13 Added a describe statement on line 114 in jasmine/spec/feedreader.js for the new suite.
+9. In Step 14 Added an beforeEach statement on line 127 in jasmine/spec/feedreader.js so that we can load the first feed ( using the done callback).  Then on added the it statement on line 137 to check for the entries.  To test i commented out line 69 in the app.js file so that the entries didn't get populated on the web page.
+10. In Step 15 Added a describe statement on line 147 in jasmine/spec/feedreader.js for the new suite.
+11. In Step 16 Added an beforeEach statement on line 163 in jasmine/spec/feedreader.js so that we get get the first feeds content and then run the second feed to get it's content.  Then on added the it statement on line 174 to check for valid content and make sure the 2 contents do not match. I tested this by changing the second feed to pull the first feed again by changing the 1 to a 0 in line 166.
