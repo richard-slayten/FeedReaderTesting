@@ -50,6 +50,7 @@ Review the Feed Reader Testing [Project Rubric](https://review.udacity.com/#!/pr
 # Steps to run/test application
 
 The index.html file needs to be loaded in a browser.  I performed the folowing steps for the competion steps above
+
 6. In the js/app.js file, the variable allFeeds ( line 10) can be renamed.  This will cause the are defined test to fail.  You can also comment out lines 12 to 22 so that the variable is empty.  This will cause the test to fail also.
 7. Undo the steps in #6 to get a passing test.
 8. Added tests on line 38 in jasmine/spec/feedreader.js to check the url.  You can rename the url property in the allFeeds variable and or blank out the url assignment to test the failure.
