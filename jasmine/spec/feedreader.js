@@ -27,7 +27,7 @@ $(function() {
         });
 
 
-        /* TODO: Write a test that loops through each feed
+        /* Write a test that loops through each feed
          * in the allFeeds object and ensures it has a URL defined
          * and that the URL is not empty.
          */
@@ -35,9 +35,9 @@ $(function() {
         * then check the url for each (forEach loop) of  the feeds to 
         * check if thr url is defined and not a length of 0.
         */
+
+
         it('have a defined url and not an empty string', function() {
-            expect(allFeeds).toBeDefined();
-            expect(allFeeds.length).not.toBe(0);
             allFeeds.forEach(function(feed){
                 expect(feed.url).toBeDefined();
                 expect(feed.url.length).not.toBe(0);
@@ -45,7 +45,7 @@ $(function() {
         });
 
 
-        /* TODO: Write a test that loops through each feed
+        /* Write a test that loops through each feed
          * in the allFeeds object and ensures it has a name defined
          * and that the name is not empty.
          */
@@ -54,8 +54,8 @@ $(function() {
         * check if thr name is defined and not a length of 0.
         */
         it('have a defined name and not an empty string', function() {
-            expect(allFeeds).toBeDefined();
-            expect(allFeeds.length).not.toBe(0);
+
+
             allFeeds.forEach(function(feed){
                 expect(feed.name).toBeDefined();
                 expect(feed.name.length).not.toBe(0);
@@ -67,7 +67,7 @@ $(function() {
     /* TODO: Write a new test suite named "The menu" */
     describe('The menu', function() {
 
-        /* TODO: Write a test that ensures the menu element is
+        /* Write a test that ensures the menu element is
          * hidden by default. You'll have to analyze the HTML and
          * the CSS to determine how we're performing the
          * hiding/showing of the menu element.
@@ -84,7 +84,7 @@ $(function() {
         });
 
 
-         /* TODO: Write a test that ensures the menu changes
+         /* Write a test that ensures the menu changes
           * visibility when the menu icon is clicked. This test
           * should have two expectations: does the menu display when
           * clicked and does it hide when clicked again.
@@ -113,7 +113,7 @@ $(function() {
     /* TODO: Write a new test suite named "Initial Entries" */
     describe('Initial Entries', function() {
 
-        /* TODO: Write a test that ensures when the loadFeed
+        /*Write a test that ensures when the loadFeed
         * function is called and completes its work, there is at least
         * a single .entry element within the .feed container.
         * Remember, loadFeed() is asynchronous so this test will require
@@ -134,16 +134,16 @@ $(function() {
         * from the parsed feed.  The handle bar template is defined to display it
         * that way.
         */
-        it('have at least one .entry element within the .feed container', function(done) {
+        it('have at least one .entry element within the .feed container', function() {
             var entryElement = $(".feed").find("article.entry:first"); 
-            expect(entryElement).toBeDefined();
-            expect(entryElement.length > 0).toBe(true);
-            done();
+
+            expect(entryElement.length).toBeGreaterThan(0);
+
          });
         
     });
 
-    /* TODO: Write a new test suite named "New Feed Selection" */
+    /* Write a new test suite named "New Feed Selection" */
     describe('New Feed Selection', function() {
         /* TODO: Write a test that ensures when a new feed is loaded
          * by the loadFeed function that the content actually changes.
@@ -171,7 +171,7 @@ $(function() {
         });
 
         // check and compare the contents once the feeds have loaded.
-        it('has changed content on page', function(done) { 
+        it('has changed content on page', function() { 
             expect(firstFeedHtml).toBeDefined();
             expect(firstFeedHtml.length).not.toBe(0);
 
@@ -179,7 +179,7 @@ $(function() {
             expect(secondFeedHtml.length).not.toBe(0);
 
             expect(secondFeedHtml).not.toEqual(firstFeedHtml);
-            done();
+
         });
 
     });
